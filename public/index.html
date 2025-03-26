@@ -14,21 +14,38 @@
 
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="min-h-screen min-w-screen">
     <main
-      class="flex flex-col max-w-full justify-center items-center h-full text-center"
+      class="flex flex-col w-screen h-screen"
     >
-      <section class="bg-gradient-to-b from-blue-600 to-blue-900 rounded-b-4xl px-26">
+      <section
+        class="bg-gradient-to-b from-blue-600 to-blue-900 rounded-b-4xl px-14 columns-1 text-center"
+      >
         <p class="text-white/80 my-4">Your Result</p>
-        <div class="rounded-full bg-blue-800 px-6 py-3  justify-self-center mb-5">
-          <p class="text-white/60 font-light "><strong class="block text-4xl font-bold text-white/100">76</strong>of 100</p>
+        <div
+          class="rounded-full bg-gradient-to-b from-blue-900 to-blue-650 px-8 py-5 justify-self-center mb-5"
+        >
+          <p class="text-white/60 font-light">
+            <strong class="block text-4xl font-bold text-white/100">76</strong
+            >of 100
+          </p>
         </div>
-        <p class="text-white/70 mb-7"><strong class="block font-semibold text-white/100 text-xl pb-1.5">Great</strong> You scored higher than 65% of the people who have taken these
-        tests.</p>
+        <p class="text-white/70 mb-7">
+          <strong class="block font-semibold text-white/100 text-xl pb-2.5"
+            >Great</strong
+          >
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
       </section>
-      <section>
-        Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61 / 100 Visual 72 /
-        100 Continue
+      <section class="py-4 px-7 w-full h-full flex flex-col">
+        <h1 class="font-bold text-gray-600 text-left mb-5 mt-1">Summary</h1>
+        <ul class="w-full flex space-y-5 flex-col mb-5">
+          <li class="bg-red-400/10 flex justify-between items-center p-4 rounded-xl "><div class="flex flex-row"><img src="/assets/images/icon-reaction.svg" alt="" class="w-4 mr-3"><p class="font-semibold text-red-400">Reaction</p></div> <span class="font-semibold text-gray-900">80 / 100</span></li>
+          <li class="bg-yellow-400/10 flex justify-between items-center p-4 rounded-xl"><div class="flex flex-row"><img src="/assets/images/icon-memory.svg" alt="" class="w-4 mr-3"><p class="font-semibold text-yellow-400">Memory</p></div> <span class="font-semibold text-gray-900">92 / 100</span></li>
+          <li class="bg-green-500/10 flex justify-between items-center p-4 rounded-xl"><div class="flex flex-row"><img src="/assets/images/icon-verbal.svg" alt="" class="w-4 mr-3"><p class="font-semibold text-green-500">Verbal</p></div> <span class="font-semibold text-gray-900">61 / 100</span></li>
+          <li class="bg-blue-800/10 flex justify-between items-center p-4 rounded-xl"><div class="flex flex-row"><img src="/assets/images/icon-visual.svg" alt="" class="w-4 mr-3"><p class="font-semibold text-blue-800">Visual</p></div> <span class="font-semibold text-gray-900">72 / 100</span></li>
+        </ul>
+        <button class="bg-gray-700 p-3.5 rounded-full text-white font-semibold">Continue</button>
       </section>
     </main>
   </body>
